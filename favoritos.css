@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container_cabecalho {
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container_cabecalho img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+nav ul li:hover {
+    color: #acd8ff;
+}
+
+.container_textos {
+    padding-left: 24px;
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+span {
+    color: #acd8ff;
+}
+
+.card-1 {
+    width: 200px;
+    background-color: #acd8ff;
+    border-radius: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    text-align: center;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.card-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-1 img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.card-1 h1 {
+    font-size: 18px;
+    color: #202020;
+    margin-bottom: 6px;
+}
+
+.card-1 p {
+    font-size: 14px;
+    color: #1871C2;
+}
+
+.carrossel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.carrossel {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.carrossel-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carrossel-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.carrossel-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #acd8ff;
+}
