@@ -68,8 +68,9 @@ span {
 }
 
 .card-1:hover {
+    
     transform: scale(1.05);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-1 img {
@@ -102,7 +103,6 @@ span {
 .carrossel {
     display: flex;
     gap: 20px;
-    width: max-content;
 }
 
 .carrossel-container::-webkit-scrollbar {
